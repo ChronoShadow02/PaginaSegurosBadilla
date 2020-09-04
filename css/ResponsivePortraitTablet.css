@@ -1,0 +1,446 @@
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation:portrait){
+    /*Cambios Generales*/
+    body{
+        font-size: 1rem;
+    }
+    h2,h3{
+        font-family: 'Lora', serif;
+        font-weight: bold;
+        font-style: italic;
+    }
+    h3{
+        text-align: center;
+    }
+    h4{
+        padding: 15px;
+        letter-spacing: 1px;
+    }
+    figcaption{
+        font-size: 1.5em;
+        font-family: 'Lora', serif;
+        font-weight: bold;
+        font-style: italic;
+        background-color: rgba(19, 87, 150, 0.7) !important;
+    }
+    /*Cambios de Estructura*/
+    header{
+        width: 100%;
+        height: 170px;
+        box-sizing:border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        clear: both;
+    }
+    /*Contenedor de la imagen de logo*/
+    .logocentrado{
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 170px;
+        display: -webkit-flex;
+        -ms-flex-direction: row;
+        clear: both;
+    }
+    /*Imagen del logo*/
+    .clImgLogo{
+        width: 100%;
+        height: 170px;
+    }
+    .hamburguer-menu,.toggle-menu,.menu,.hamburger > div{
+        display: none;
+    }
+    div.sticky-navbar{
+        display: block;
+    }
+    /*Slider de imágenes*/
+    /*Menu que se ve en tablet*/
+    .sticky-navbar{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        background-color: #048fcb;
+        font-size: 1.4em;
+        border-radius: 0px 0px 3px 3px;
+        -moz-border-radius: 0px 0px 3px 3px;
+        -webkit-border-radius: 0px 0px 3px 3px;
+        z-index: 50;
+        display: block;
+    }
+    .sticky-navbar ul{
+        list-style: none;
+        padding: 0;
+    }
+    .sticky-navbar  li  a{
+        color: #fff;
+        float: left;
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 1.2em;
+    }
+    .sticky-navbar a:hover {
+        background-color: #54C9EF;
+        color: #FFF;
+    }
+    /*Para que el menu se quede fijo*/
+    .sticky {
+        top: 0;
+        left: 0;
+        position: initial;
+    }
+    /*CARROUSEL DE IMAGENES DEL INDEX*/
+    .carrousel{
+        width: 100%;
+    }
+    /* hace que las imagenes tengan responsive */
+    .carousel-inner img {
+        width: 100%;
+        height: 100%;
+    }
+    /*Se acomoda el contenido principal*/
+    .clContent{
+        clear: both;
+    }
+    /*
+        *********************************************SECCION DE CONTENIDO*********************************************
+    */
+    section{
+        width: calc(100%-1px);
+        height: 100%;
+    }
+    /*Texto de importancia de los seguros*/
+    .clImportanciaSeguros h2{
+        margin-top: 10px;
+        text-align: center;
+        font-family: 'Lora', serif;
+        font-weight: bold;
+        font-style: italic;
+    }
+    .clImportanciaSeguros p{
+        padding: 15px;
+        text-align: justify;
+        font-size: x-large;
+        font-family: 'Lora', serif;
+    }
+    /*Formulario de Contacto*/
+    .clFormularioContacto{
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        padding: 1.5rem;
+        background-color: #CBDFF1; 
+    }
+        .clFormularioContacto{
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    form.clContacto{
+        margin: 0 auto;
+        width: 100%;
+        background-color: #cbdff1;
+        box-sizing: border-box;
+    }
+    form.clContacto{
+        margin: 0 auto;
+        width: 100%;
+        background-color: #cbdff1;
+        box-sizing: border-box;
+    }
+    /*Estilo de boton de enviar informacion*/
+    .clBtnEnviarInformacion {
+        background-color: #ffa14a;
+        color: white;
+        padding: 5px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border: none;
+        cursor: pointer;
+        font-size: 1.50rem;
+        border-bottom: 1px solid #ffa14a;
+        border-radius: 4px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+    }
+    /*Estilo de los errores*/
+    .error{
+        color: red;
+    }
+    /*
+        *********************************************FOOTER*********************************************
+    */
+    footer{
+        width: 100%;
+        height: 100%;
+        background-color: #FFF;
+        color: #000;
+        font-weight: 600;
+        clear: both;
+    }
+    footer p{
+        text-align: center;
+        padding: 20px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: x-large;
+    }
+    /*
+        *********************************************NUESTROS SEGUROS*********************************************
+    */
+    h2.titulo-tipo-seguro{/*TEXTO QUE DICE QUE TIPO DE SEGURO QUIERE SELECCIONAR*/
+        text-align: center;
+    }
+    .clasificacion-seguros{/*CONTENEDOR QUE TIENE LA CATEGORIZACION DE LOS SEGUROS*/
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+    .tipo-seguro{/*DIMENSIONES DE LAS CATEGORIAS DE SEGUROS*/
+        width: 90%;
+        margin: 20px 20px;
+        -webkit-box-shadow: 0px 0px 18px 2px rgba(0,0,0,0.3);
+        -moz-box-shadow: 0px 0px 18px 2px rgba(0,0,0,0.3);
+        box-shadow: 0px 0px 18px 2px rgba(0,0,0,0.3);
+    }
+    figure.imghvr-zoom-in{
+        width: 100%;
+        height: 100%;
+    }
+/****************************************CONTENIDO DE CADA ASPECTOS DE LOS SEGUROS********************************/
+    .Contenedor-difuminado{
+        background-image: url('../img/fondo-difuminado-tablet.jpg');
+        background-size: 100% 100%;
+        float: left;
+    }
+    .ClPortadaSeguros{
+        margin: 1.25rem;
+        box-sizing: border-box;
+        position: relative;
+        z-index: 1;
+    }
+    .ClPortadaSeguros h2{/*El titulo que esta dentro de la imagen de las paginas*/
+        position: absolute;
+        left: 1rem;
+        bottom: 0.1rem;
+        color: #FFF;
+        font-family: 'Lora', serif;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 3em;
+    }
+    .portada{
+        height: 300px;
+    }
+    .portada img{
+        width: 100%;
+        height: 100%;
+    }
+    .portada::before{
+        background-color: rgba(0, 0, 0, 0.3);
+        content:'';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .clImagenSeguro a{
+        text-decoration: none;
+        font-size: 1.6em;
+    }
+    .cLDescriptionSeguros{
+        background-color: rgba(255,255,255,0.6);
+        margin-bottom: 15px;
+        padding: 1.25rem;
+    }
+    .cLDescriptionSeguros h2 {
+        font-size: 3.5em;
+    }
+    .cLDescriptionSeguros p{
+        font-size:1.5rem;
+        text-align: justify;
+        font-family: 'Lora', serif;
+    }
+    /*****************************************************PAGINA DE FORMULARIOS*********************************************/
+    .clFormularios{
+        margin-left: 0.938rem;
+        margin-right:0.938rem ;
+    }
+    /*Tabla de formularios*/
+    .table{
+        font-size: 1.5rem;
+    }
+    .table td{
+        border-top: 2px dotted #dee2e6 !important;
+    }
+    /*Color de encabezados de la tabla*/
+    .table thead th{
+        color: #048fcb;
+        border-top: 0;
+    }
+    /*Enlaces de descarga de documetos*/
+    .table tbody a {
+        color: #58b5db;
+        
+    }
+        /*
+        *********************************************CONTACTANOS*********************************************
+    */
+    .Mision,.Vision,.QuienesSomos{
+        padding: 15px;
+        background-color: #cbdff1;;
+        clear: both;
+        margin: 10px;
+    }
+    .Mision h2, .Vision h2, .QuienesSomos h2{
+        font-size: 3em;
+    }
+    .Mision p ,.Vision p, .QuienesSomos p{
+        margin: 0;
+        font-size: 2em;
+        text-align: justify;
+    }
+    .contacto{
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+        background-color: #cbdff1;;
+        box-sizing: border-box;
+    }
+    .contacto h3{
+        font-size: 2em;
+    }
+    /*
+        *********************************************REDES SOCIALES*********************************************
+    */
+        /*Estructura de las listas*/
+        .ch-grid {
+            margin: 20px 0 0 0;
+            padding: 0;
+            list-style: none;
+            display: block;
+            text-align: center;
+            width: 100%;
+        }
+
+        .ch-grid:after,
+        .ch-item:before {
+            content: '';
+            display: flex;
+        }
+
+        .ch-grid:after {
+            clear: both;
+        }
+
+        .ch-grid li {
+            width: 125px;
+            height: 125px;
+            display: inline-block;
+            margin: 5px;
+        }
+        /*Estructura de la lista lista*/
+        .ch-item {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            overflow: hidden;
+            position: relative;
+            cursor: default;
+            box-shadow: 
+                inset 0 0 0 16px rgba(255,255,255,0.6),
+                0 1px 2px rgba(0,0,0,0.1);
+            transition: all 0.4s ease-in-out;
+            
+        }
+        /*imagenes de las listas*/
+        .ch-img-1 { 
+            background-image: url('../img/whatsapp.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        .ch-img-2 { 
+            background-image: url('../img/outlook.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        .ch-img-3 { 
+            background-image: url('../img/instagram.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        .ch-img-4 { 
+            background-image: url('../img/identity.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        .ch-img-5 { 
+            background-image: url('../img/facebook.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        .ch-img-6 { 
+            background-image: url('../img/telefono.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+/*Color de la lista cuando se da el hover*/
+    .ch-info{
+        text-align: center;
+        background: rgba(0,0,0,0.5);
+        width: inherit;
+        height: inherit;
+        border-radius: 50%;
+        overflow: hidden;
+        opacity: 0;
+        transition: all 0.4s ease-in-out;
+        transform: scale(0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /*texto que esta dentro de la lista*/
+    .ch-info h3 {
+        text-align: center;
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+        color: #000;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: 'Lora', serif;
+        font-style: italic;
+        text-shadow: 
+            0 0 1px #fff, 
+            0 1px 2px rgba(0,0,0,0.3);
+    }
+    .ch-info h3 a{
+        text-decoration: none;
+        color: #FFF;
+    }
+    /*El borde de las imagenes redondeas(borde blanco)*/
+    .ch-item:hover {
+        box-shadow: 
+            inset 0 0 0 1px rgba(255,255,255,0.1),
+            0 1px 2px rgba(0,0,0,0.1);
+    }
+    /*Efecto de */
+    .ch-item:hover .ch-info {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,510 @@
+
+/* 
+    ##Device = Desktops
+
+    ##Screen = 1281px to higher resolution desktops
+
+    Autor:Angel Vega Cordero
+*/
+
+@media (min-width: 1281px) {
+    /*Cambios Generales*/
+    body{
+        font-size: 1rem;
+    }
+    h2,h3{
+        font-family: 'Lora', serif;
+        font-weight: bold;
+        font-style: italic;
+    }
+    h3{
+        text-align: center;
+    }
+    a:hover{
+        text-decoration: none;
+    }
+    figcaption{
+        font-size: 1.2em;
+        font-family: 'Lora', serif;
+        background-color: rgba(19, 87, 150, 0.7) !important;
+    }
+    /*Cambios de estructura*/
+    header{
+        height: 170px;
+        display: flex !important;
+        display: -webkit-flex !important;
+        flex-direction: row;
+        -ms-flex-direction: row;
+        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    /*Imagen del logo*/
+    .clImgLogo{
+        width: 437px;
+        height: 170px;
+    }
+    /*Menu que se ve el telefonos*/
+    .hamburger-menu,.toggle-menu,.hamburger,.menu{
+        display: none;
+    }
+    /*Menu que se ve en tablet*/
+    .sticky-navbar{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        background-color: #048fcb;
+        font-size: 1.4em;
+        border-radius: 0px 0px 3px 3px;
+        -moz-border-radius: 0px 0px 3px 3px;
+        -webkit-border-radius: 0px 0px 3px 3px;
+        display: block;
+    }
+    .sticky-navbar ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .sticky-navbar  li  a{
+        color: #fff;
+        float: left;
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-family: 'Lora', serif;
+    }
+    .sticky-navbar a:hover {
+        background-color: #54C9EF;
+        color: #FFF;
+    }
+    .sticky-navbar a.active {
+        background-color: #29BBEB;
+        color: #FFF;
+    }
+    /*Para que el menu se quede fijo*/
+    .sticky {
+        top: 0;
+        left: 0;
+        position: initial;
+    }
+        /*CARROUSEL DE IMAGENES DEL INDEX*/
+    .carrousel{
+        width: 100%;
+    }
+    /* hace que las imagenes tengan responsive */
+    .carousel-inner img {
+        width: 100%;
+        height: 700px;
+    }
+    /*Se acomoda el contenido principal*/
+    .clContent{
+        clear: both;
+        height: 100%;
+        
+    }
+    .clImportanciaSeguros{
+        opacity: 0;
+    }
+    /*Importancia de  los seguros*/
+    .clImportanciaSeguros h2{
+        margin-top:0.8125em;
+        margin-bottom:0.8125em;
+        text-align: center;
+        font-family: 'Lora', serif;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 3em;
+    }
+    .clImportanciaSeguros p{
+        padding: 1.875em;
+        text-align: justify;
+        font-family: 'Lora', serif;
+        font-size: 1.2rem;
+    }
+    .imgImportanciaSeguros{
+        align-content: center;
+        filter:blur(1px);
+        width: 400px;
+        height: 400px;
+        transition: ease 0.5s;
+    }
+    .imgLogoBCBS{
+        opacity: 0;
+    }
+    /*Texto de contactanos de pagina principal*/
+    h3.textoContactanosindex{
+        text-align: center;
+        padding: 15px;
+        font-family: 'Lora', serif;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 2.5em;
+    }
+/*
+****************************************CONTENIDO DE FORMULARIO DE CONTACTO**********************************
+*/
+    .clFormularioContacto{
+        width: 100%;
+        height: 100%;
+        background-color: #cbdff1;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        opacity: 0;
+        transition: all 0.5s;
+    }
+/*ANIMACION QUE HACE QUE EL FORMULARIO SE MUESTRE DE ABAJO HACIA ARRIBA*/
+    .mostrarArriba{
+        animation: mostrarArriba 1s;
+    }
+    @keyframes mostrarArriba {
+        0%{transform: translateY(60px);}
+        100%{transform: translateY(0);}
+    }
+    .mostrarDerecha{
+        animation: mostrarDerecha 1s;
+    }
+    @keyframes mostrarDerecha {
+        0%{transform: translateX(60px);}
+        100%{transform: translateX(0);}
+    }
+/*
+****************************************FORMULARIO DE CONTACTO**********************************
+*/
+    form.clContacto{
+        width: 700px;
+        margin: 5px auto 0 auto;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+
+    /*Estilo de boton de enviar informacion*/
+    .clBtnEnviarInformacion {
+        background-color: #ffa14a;
+        color: white;
+        padding: 5px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border: none;
+        cursor: pointer;
+        font-size: 1.3rem;
+        border-bottom: 1px solid #ffa14a;
+        border-radius: 4px;
+        -moz-border-radius:4px;
+        -webkit-border-radius:4px;
+    }
+    /*Estilo de los errores*/
+    .error{
+        color: red;
+    }
+    /*
+        *********************************************FOOTER*********************************************
+    */
+    footer{
+        width: 100%;
+        height: 100%;
+        background-color: #FFF;
+        color: #000;
+        font-weight: 600;
+        clear: both;
+    }
+    footer p{
+        text-align: center;
+        padding: 20px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 1rem;
+    }
+    /*
+        *********************************************NUESTROS SEGUROS*********************************************
+    */
+
+    h2.titulo-tipo-seguro{/*TEXTO QUE DICE QUE TIPO DE SEGURO QUIERE SELECCIONAR*/
+        text-align: center;
+        margin: 7px 0;
+    }
+    .clasificacion-seguros{/*CONTENEDOR QUE TIENE LA CATEGORIZACION DE LOS SEGUROS*/
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+    .tipo-seguro{/*DIMENSIONES DE LAS CATEGORIAS DE SEGUROS*/
+        background-color: #FFF;
+        width: 400px;
+        height: 250px;
+        margin: 20px 20px;
+        -webkit-box-shadow: 0px 0px 18px 2px rgba(0,0,0,0.3);
+        -moz-box-shadow: 0px 0px 18px 2px rgba(0,0,0,0.3);
+        box-shadow: 0px 0px 18px 2px rgba(0,0,0,0.3);
+        clear: both;
+    }
+    /*IMAGEN DE LOS TIPOS DE SEGUROS QUE APARECEN EN LA PAGINA "NUESTROS SEGUROS"*/
+    .imgTipoSeguros{
+        width: 400px;
+        height: 250px;
+    }
+/*PORTADAS DE LOS SEGUROS DE VIDA Y SALUD(SON LAS PAGINAS QUE TIENEN LOS SEGUROS)*/
+    .Contenedor-difuminado{
+        background-image: url('../img/fondo-difuminado-tablet.jpg');
+        background-size: cover;
+        float: left;
+        width: 100%;
+        transition: linear 1s;
+    }
+    .ClPortadaSeguros{
+        margin: 1.25rem;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        position: relative;
+        margin-left:6.25em;
+        margin-right: 6.25em;
+    }
+    .portada{
+        height: 400px;
+    }
+    .portada::before{
+        background-color: rgba(0, 0, 0, 0.3);
+        content:'';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .portada img{
+        width: 100%;
+        height: 100%;
+    }
+    .ClPortadaSeguros h2{/*El titulo que esta dentro de la imagen de las paginas*/
+        position: absolute;
+        left: 1.5rem;
+        bottom: 1rem;
+        color: #FFF;
+        font-size: 2.6em;
+        font-family: 'Lora', serif;
+        font-weight: bold;
+        font-style: italic;
+    }
+    .cLDescriptionSeguros{
+        background-color: rgba(255,255,255,0.6);
+        margin-bottom: 15px;
+        padding: 1.25rem;
+        filter: blur(0px);
+    }
+    .cLDescriptionSeguros h2 { 
+        font-size: 2.1rem;
+        font-family: 'Lora', serif;
+        font-weight: bold;
+        font-style: italic;
+    }
+    .cLDescriptionSeguros p,.cLDescriptionSeguros a{
+        font-size:1.2rem; 
+    }
+    /*
+        *********************************************Formularios*********************************************
+    */
+    .clFormularios{
+        margin-left:5rem;
+        margin-right:5rem;
+    }
+    /*Tabla de formularios*/
+    .table{
+        font-size: larger;
+        transition: ease-in-out 1s;
+    }
+    .table td{
+        border-top: 2px dotted #dee2e6 !important;
+    }
+    /*Color de encabezados de la tabla*/
+    .table thead th{
+        color: #048fcb;
+        border-top: 0;
+        border-bottom: 1px dotted #dee2e6 !important;
+    }
+    /*Enlaces de descarga de documetos*/
+    .table tbody a {
+        color: #58b5db;
+        text-decoration: none;
+    }
+    /*
+        *********************************************CONTACTANOS*********************************************
+    */
+    .Mision,.Vision,.QuienesSomos{
+        padding: 15px;
+        clear: both;
+        margin-bottom: 10px;
+        background-color: rgba(255,255,255,0.6);
+        transition: ease-in-out 1s;
+    }
+    .Mision h2, .Vision h2,.QuienesSomos h2{
+        font-size: 2.1rem;
+        font-family: 'Lora', serif;
+        font-weight: bold;
+        font-style: italic;
+    }
+    .Mision p ,.Vision p ,.QuienesSomos p{
+        margin: 0;
+        font-size:1.2rem;
+    }
+    .contacto{
+        width: 100%;
+        height: 300px;
+        padding: 15px;
+        margin: 0 auto;
+        background-color: #cbdff1;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        clear: both;
+    }
+    /*
+        *********************************************REDES SOCIALES*********************************************
+    */
+        /*Estructura de las listas*/
+        .ch-grid {
+            margin: 20px 0 0 0;
+            padding: 0;
+            list-style: none;
+            display: block;
+            text-align: center;
+            width: 100%;
+        }
+
+        .ch-grid:after,
+        .ch-item:before {
+            content: '';
+            display: flex;
+        }
+
+        .ch-grid:after {
+            clear: both;
+        }
+
+        .ch-grid li {
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+            margin: 10px;
+        }
+        /*Estructura de la lista lista*/
+        .ch-item {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            overflow: hidden;
+            position: relative;
+            cursor: default;
+            box-shadow: 
+                inset 0 0 0 16px rgba(255,255,255,0.6),
+                0 1px 2px rgba(0,0,0,0.1);
+            transition: all 0.4s ease-in-out;
+        }
+        /*imagenes de las listas*/
+        .ch-img-1 { 
+            background-image: url('../img/whatsapp.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        .ch-img-2 { 
+            background-image: url('../img/outlook.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        .ch-img-3 { 
+            background-image: url('../img/instagram.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        .ch-img-4 { 
+            background-image: url('../img/identity.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        .ch-img-5 { 
+            background-image: url('../img/facebook.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        .ch-img-6 { 
+            background-image: url('../img/telefono.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+/*Color de la lista cuando se da el hover*/
+    .ch-info{
+        text-align: center;
+        background: rgba(0,0,0,0.5);
+        width: inherit;
+        height: inherit;
+        border-radius: 50%;
+        overflow: hidden;
+        opacity: 0;
+        transition: all 0.4s ease-in-out;
+        transform: scale(0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /*texto que esta dentro de la lista*/
+    .ch-info h3 {
+        text-align: center;
+        color: #000;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 1rem;
+        font-family: 'Lora', serif;
+        font-style: italic;
+        text-shadow: 
+            0 0 1px #fff, 
+            0 1px 2px rgba(0,0,0,0.3);
+    }
+    .ch-info h3 a{
+        text-decoration: none;
+        color: #FFF;
+    }
+    /*El borde de las imagenes redondeas(borde blanco)*/
+    .ch-item:hover {
+        box-shadow: 
+            inset 0 0 0 1px rgba(255,255,255,0.1),
+            0 1px 2px rgba(0,0,0,0.1);
+    }
+    /*Efecto de */
+    .ch-item:hover .ch-info {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+    /*REDES SOCIALES FIJAS*/
+    .redesFijas{
+        bottom: 10%;
+        right: 10%;
+        text-align: center;
+        position: fixed;
+    }
+    .btn{
+        color: #fff;
+        display: inline-block;
+        height: 100%;
+        overflow: hidden;
+        box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.5);
+        margin: 0;
+    }
+    .btn i{
+        font-size: 20px;
+        transition: 0.4s linear;
+    }
+    .btn:hover i{
+        transform: scale(1.1);
+    }

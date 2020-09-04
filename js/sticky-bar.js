@@ -1,0 +1,1 @@
+$(document).ready(function () { var navOffSet = $('.sticky-navbar').offset().top; $(window).scroll(function () { var scrollPos = $(window).scrollTop(); if (scrollPos >= navOffSet) { $('.sticky-navbar').addClass('sticky'); } else { $('.sticky-navbar').removeClass('sticky'); } }); });
